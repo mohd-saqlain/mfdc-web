@@ -304,9 +304,9 @@ function Navbar(props) {
 
 
                 <Toolbar sx={{ backgroundColor: "white", px: { xs: 0, sm: 0 } }}>
-                    <IconButton color="inherit">
+                    {/* <IconButton color="inherit">
                         <MenuIcon />
-                    </IconButton>
+                    </IconButton> */}
 
                     <Box
                         sx={{
@@ -317,6 +317,7 @@ function Navbar(props) {
                             justifyContent: { xs: 'flex-start', sm: 'space-evenly' },
                             gap: { xs: 1, sm: 2 }, // Smaller gap on mobile
                             py: 1,
+                            px:'10px',
                         }}
                     >
                         <Box

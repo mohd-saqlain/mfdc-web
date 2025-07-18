@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import link1 from '../../assets/logo3.jpg';
 import link2 from '../../assets/quicklinks2.png';
 import link3 from '../../assets/quicklinks5.png';
-import link4 from '../../assets/quicklinks3.jpg';
+import link4 from '../../assets/quicklinks3.png';
 import bgImage from "../../assets/bg1.jpg";
 
 const quickLinks = [

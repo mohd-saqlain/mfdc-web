@@ -33,6 +33,7 @@ i18next.use(initReactI18next).init({
         latestnews1: "Notice regarding upcoming fisheries project",
         latestnews2: "Government subsidy updates for fish farmers",
         latestnews3: "New deep-sea fishing guidelines announced",
+        connectWithUs: "Connect With Us",
 
         // directors name
         person1Name1: "Hon. Shri Nitesh Rane",
@@ -175,7 +176,7 @@ i18next.use(initReactI18next).init({
         officer5: "Mr. Prakash S. Katkade",
         designation5: "Driver",
 
-         officer6: "Rushikesh Dilip Palve",
+        officer6: "Rushikesh Dilip Palve",
         designation6: "Assistant Fisheries Development Officer – Dimbe Dam, Pune",
 
         officer11: "Mr. Mohammad A. Jabbar",
@@ -297,6 +298,7 @@ i18next.use(initReactI18next).init({
         latestnews1: "मत्स्य प्रकल्पांबाबत लवकरच सूचना जाहीर होणार",
         latestnews2: "मत्स्यशेतीसाठी शासनाच्या अनुदानात सुधारणा",
         latestnews3: "खोल समुद्रातील मासेमारीसाठी नवीन मार्गदर्शक तत्त्वे जारी",
+        connectWithUs: "आमच्याशी संपर्क साधा",
 
 
         // deparments
@@ -446,7 +448,7 @@ i18next.use(initReactI18next).init({
 
         officer6: "श्री. ऋषिकेश दिलीप पालवे",
         designation6: "सहाय्यक मत्स्यव्यवसाय विकास अधिकारी डिंभे डॅम पुणे  ",
-        
+
 
         officer11: "श्री. मोहम्मद अ. जब्बार",
         designation11: "वाहनचालक",
