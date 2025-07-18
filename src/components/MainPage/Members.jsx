@@ -54,7 +54,7 @@ const DirectorsPage = () => {
             textShadow: '1px 1px 4px rgba(0,0,0,0.6)',
           }}
         >
-          {t('peopleData')}
+          {/* {t('peopleData')} */}
         </Typography>
       </Box>
 
