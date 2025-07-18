@@ -35,12 +35,15 @@ i18next.use(initReactI18next).init({
         latestnews3: "New deep-sea fishing guidelines announced",
 
         // directors name
-        person1Name1: "Nitesh Rane",
-        person1Designation1: "Minister of Fisheries Department, <br/>Government of Maharashtra ",
-        person2Name1: "Ramaswami N, IAS",
-        person2Designation1: "Secretary, Fisheries, <br/>Government of Maharashtra",
-        person3Name1: "Avinash Pathak",
-        person3Designation1: "Managing Director,Maharashtra <br/> Fisheries Development Corporation",
+        person1Name1: "Hon. Shri Nitesh Rane",
+        person1Designation1: "Minister,  Fisheries and Ports <br/>Government of Maharashtra ",
+
+        person2Name1: "Shri Ramaswamy N. (I.A.S.)",
+        person2Designation1: " Secretary, Fisheries,<br/> Government of Maharashtra",
+
+        person3Name1: "Shri Avinash Pathak (I.A.S.)",
+        person3Designation1: "Managing Director, Maharashtra<br/>  Fisheries Development Corporation",
+
 
 
         // deparments
@@ -80,6 +83,7 @@ i18next.use(initReactI18next).init({
         vision: "Vision",
         mission: "Mission",
         goals: "Goals",
+        registernow: "Register Now",
 
         visionheading: "Our vision is to foster sustainable fisheries development across the coastal and inland regions of Maharashtra.",
         visionpara1: "We aim to transform the fisheries sector into a self-reliant, technologically advanced, and economically vibrant industry...",
@@ -171,6 +175,8 @@ i18next.use(initReactI18next).init({
         officer5: "Mr. Prakash S. Katkade",
         designation5: "Driver",
 
+         officer6: "Rushikesh Dilip Palve",
+        designation6: "Assistant Fisheries Development Officer – Dimbe Dam, Pune",
 
         officer11: "Mr. Mohammad A. Jabbar",
         designation11: "Driver",
@@ -193,8 +199,8 @@ i18next.use(initReactI18next).init({
         officer35: "Mr. Irfan Shaikh",
         designation35: "Peon",
 
-        officer36: "Mr. Padam B. Rijal",
-        designation36: "Watchman",
+        officer36: "Mr. Yogesh Kataane",
+        designation36: "Sahayak Matsya Vikas Adhikari",
 
         officer37: "Mr. Vasant B. Parshive",
         designation37: "Watchman",
@@ -317,15 +323,16 @@ i18next.use(initReactI18next).init({
 
         department3: "औरंगाबाद विभाग ",
         departments: "विभाग",
+        registernow: " नोंदणी करा",
 
 
         // directors name
-        person1Name1: "नितेश राणे",
-        person1Designation1: "मत्स्यव्यवसाय मंत्री, <br/> महाराष्ट्र",
-        person2Name1: "रामास्वामी एन.",
-        person2Designation1: "सचिव, मत्स्यव्यवसाय, <br/>महाराष्ट्र शासन ",
-        person3Name1: "अविनाश पाठक",
-        person3Designation1: "व्यवस्थापकीय संचालक (भा. प्र. से.),<br/>मत्स्यउद्योग विकास महामंडळ",
+        person1Name1: "मा. ना. श्री. नितेश राणे  ",
+        person1Designation1: " मंत्री , मत्स्यव्यवसाय व बंदरे <br/>महाराष्ट्र शासन",
+        person2Name1: "श्री. रामास्वामी एन. (भा. प्र. से.)",
+        person2Designation1: " सचिव, मत्स्यव्यवसाय, <br/>महाराष्ट्र शासन ",
+        person3Name1: "श्री. अविनाश पाठक (भा. प्र. से.)",
+        person3Designation1: "व्यवस्थापकीय संचालक ,<br/>महाराष्ट्र मत्स्योद्योग विकास महामंडळ",
 
 
 
@@ -437,6 +444,10 @@ i18next.use(initReactI18next).init({
         officer5: "श्री. प्रकाश सं. कातकडे",
         designation5: "वाहनचालक",
 
+        officer6: "श्री. ऋषिकेश दिलीप पालवे",
+        designation6: "सहाय्यक मत्स्यव्यवसाय विकास अधिकारी डिंभे डॅम पुणे  ",
+        
+
         officer11: "श्री. मोहम्मद अ. जब्बार",
         designation11: "वाहनचालक",
 
@@ -458,8 +469,8 @@ i18next.use(initReactI18next).init({
         officer35: "श्री. इरफान शेख",
         designation35: "शिपाई",
 
-        officer36: "श्री. पदम ब. रिजाल",
-        designation36: "पहारेकरी",
+        officer36: "श्री. योगेश कटाणे",
+        designation36: "सहाय्यक मत्स्य विकास अधिकारी",
 
         officer37: "श्री. वंसत भु. पारशिवे",
         designation37: "पहारेकरी",

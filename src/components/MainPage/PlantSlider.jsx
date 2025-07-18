@@ -8,14 +8,14 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import plant1 from "../../assets/plant/plant1.jpg";
-import plant2 from "../../assets/plant/plant2.jpg";
+import plant2 from "../../assets/plant/plant18.jpg";
 import plant3 from "../../assets/plant/plant3.jpg";
 import plant4 from "../../assets/plant/plant4.jpg";
 import plant5 from "../../assets/plant/plant5.jpg";
 import plant6 from "../../assets/plant/plant6.jpg";
 import plant7 from "../../assets/plant/plant7.jpg";
 import plant8 from "../../assets/plant/plant8.jpg";
-import plant9 from "../../assets/plant/plant9.jpg";
+import plant9 from "../../assets/plant/plant17.jpg";
 import plant10 from "../../assets/plant/plant10.jpg";
 import plant11 from "../../assets/plant/plant11.jpg";
 

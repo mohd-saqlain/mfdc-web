@@ -17,7 +17,8 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Collapse from '@mui/material/Collapse';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
-
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
@@ -386,7 +387,7 @@ function Navbar(props) {
                                         <Button
                                             sx={{ color: 'white', fontWeight: '600' }}
                                             onClick={handleDeptMenuClick}
-                                            endIcon={<ArrowDropDownIcon />}
+                                            endIcon={<ExpandMoreIcon/>}
                                         >
                                             {t('departments')}
                                         </Button>
@@ -414,7 +415,7 @@ function Navbar(props) {
                                         <Button
                                             sx={{ color: 'white', fontWeight: '600' }}
                                             onClick={(e) => setNFDCMenuAnchorEl(e.currentTarget)}
-                                            endIcon={<ArrowDropDownIcon />}
+                                            endIcon={<ExpandMoreIcon/>}
                                         >
                                             {t('nfdc_projects')}
                                         </Button>
@@ -442,7 +443,7 @@ function Navbar(props) {
                                         <Button
                                             sx={{ color: 'white', fontWeight: '600' }}
                                             onClick={(e) => setGuidlinesMenuAnchorEl(e.currentTarget)}
-                                            endIcon={<ArrowDropDownIcon />}
+                                            endIcon={<ExpandMoreIcon/>}
                                         >
                                             {t('guidlines')}
                                         </Button>
@@ -469,7 +470,7 @@ function Navbar(props) {
                                         <Button
                                             sx={{ color: 'white', fontWeight: '600' }}
                                             onClick={(e) => setSchemesMenuAnchorEl(e.currentTarget)}
-                                            endIcon={<ArrowDropDownIcon />}
+                                            endIcon={<ExpandMoreIcon/>}
                                         >
                                             {t('schemes1')}
                                         </Button>
@@ -504,8 +505,9 @@ function Navbar(props) {
                         disableGutters
                         sx={{
                             width: "auto",
+                             ml: "auto", 
                             px: { xs: 1, sm: 2 },
-                            py: { xs: 1, sm: 0 },
+                            py: { xs: "2px", sm: "2px" },
                         }}
                     >
                         <Button
@@ -514,14 +516,16 @@ function Navbar(props) {
                             target="_blank"
                             rel="noopener noreferrer"
                             sx={{
-                                fontSize: { xs: 14, sm: 16 },
-                                px: { xs: 5, sm: 3 },
+                                fontSize: { xs: 14, sm: 14 },
+                                px: { xs: 2, sm: 3 },
                                 py: { xs: 1, sm: 1 },
                                 color: "white",
                                 backgroundColor: "rgba(11, 80, 133, 0.83)",
                                 borderRadius: "20px",
+                                fontWeight:'700',
                                 boxShadow: "0px 4px 12px rgba(0,0,0,0.2)",
                                 textTransform: "none",
+                                gap:1,
                                 transition: "all 0.3s ease",
                                 "&:hover": {
                                     backgroundColor: "rgba(4, 53, 90, 0.83)",
@@ -530,7 +534,9 @@ function Navbar(props) {
                                 },
                             }}
                         >
-                            {t("register Now")}
+                            {t("registernow")}
+                            <ExitToAppIcon  sx={{ fontSize: 20 }}/>
+                            
                         </Button>
                     </ListItem>
 

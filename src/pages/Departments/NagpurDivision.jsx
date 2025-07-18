@@ -16,13 +16,14 @@ function createData(no, name, designation) {
 
 const rows = [
   // createData(1, "officer31", "designation31"),
-  // createData(2, "officer32", "designation32"),
+  // createData(2, "officer32", "designation32"), 
   // createData(3, "officer33", "designation33"),
   // createData(4, "officer34", "designation34"),
-  createData(1, "officer35", "designation35"),
-  // createData(6, "officer36", "designation36"),
-  createData(2, "officer37", "designation37"),
-  createData(3, "officer38", "designation38"),
+  
+  createData(1, "officer36", "designation36"),
+    createData(2, "officer38", "designation38"),
+  createData(3, "officer37", "designation37"),
+  createData(4, "officer35", "designation35"),
 ];
 
 export default function NagpurDivision() {

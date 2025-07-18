@@ -20,7 +20,8 @@ const rows = [
   createData(2, "officer4", "designation4"),
   createData(3, "officer3", "designation3"),
   createData(4, "officer1", "designation1"),
-  createData(5, "officer5", "designation5"),
+  createData(5, "officer6", "designation6"),
+   createData(6, "officer5", "designation5"),
   
 ];
 
