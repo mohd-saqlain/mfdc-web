@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 // Import icons/logos for quick links
 import link1 from '../../assets/logo3.jpg';
 import link2 from '../../assets/quicklinks2.png';
-import link3 from '../../assets/quciklinks3.png';
+import link3 from '../../assets/quicklinks5.png';
 import link4 from '../../assets/quicklinks3.jpg';
 import bgImage from "../../assets/bg1.jpg";
 
@@ -22,7 +22,7 @@ const quickLinks = [
   },
   {
     title: "quickLink3Title",
-    url: "https://fisheries.maharashtra.gov.in/index.php/marine-and-inland",
+    url: "https://nfdb.gov.in/",
     icon: link3,
   },
   {
@@ -46,14 +46,14 @@ const QuickLinks = () => {
       <Grid container spacing={5} sx={{ marginTop: 3, position: 'relative', zIndex: 1,justifyContent:'center' }}>
         {quickLinks.map((link, index) => (
           <Grid item key={index} xs={12} sm={6} md={3}>
-            <Card sx={{ padding: '5px', textAlign: 'center', backgroundColor: 'rgba(230, 255, 255, 0.64)', borderRadius: '10px', boxShadow: '3px 3px 10px rgba(0, 0, 0, 0.3)' }}>
+            <Card sx={{ padding: '5px', textAlign: 'center', backgroundColor: 'rgba(230, 255, 255, 0.64)', borderRadius: '10px', justifyContent: 'center', width:'300px',   height: '150px', boxShadow: '3px 3px 10px rgba(0, 0, 0, 0.3)' }}>
               <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <a href={link.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                   <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <img
                       src={link.icon}
                       alt={link.title}
-                      style={{ width: '60px', height: '60px', marginBottom: '10px' }}
+                      style={{ width: 'auto', height: '60px', marginBottom: '10px' }}
                     />
                     <Typography
                       variant="body1"

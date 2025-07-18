@@ -57,9 +57,9 @@ i18next.use(initReactI18next).init({
         /// quick links
 
         quicklinesheading: "Quick Links",
-        quickLink1Title: "PMMSY",
+        quickLink1Title: " Pradhan Mantri Matsya Sampada Yojana",
         quickLink2Title: "Fisheries Department Government of Maharashtra, India",
-        quickLink3Title: "Marine and Inland Water Dashboard",
+        quickLink3Title: "National Fisheries Development Boards",
         quickLink4Title: "SagarMala - Ministry of Shipping, GOI",
 
 
@@ -314,7 +314,7 @@ i18next.use(initReactI18next).init({
         quicklinesheading: "जलद दुवे",
         quickLink1Title: "प्रधानमंत्री मत्स्यसंपदा योजना डॅशबोर्ड",
         quickLink2Title: "मत्स्यव्यवसाय विभाग महाराष्ट्र शासन, भारत",
-        quickLink3Title: "सागरी आणि भूजल डॅशबोर्ड",
+        quickLink3Title: "राष्ट्रीय मात्स्यिकी विकास बोर्ड",
         quickLink4Title: "सागरमाला - भारत सरकारचे नौवहन मंत्रालय",
 
         // deparments
