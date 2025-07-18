@@ -6,116 +6,149 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { Box, Typography } from '@mui/material';
+import { Breadcrumbs, Link, Box, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { Breadcrumbs, Link, } from '@mui/material';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
 function createData(no, name, designation) {
   return { no, name, designation };
 }
 
 const rows = [
-  // createData(1, "officer31", "designation31"),
-  // createData(2, "officer32", "designation32"), 
-  // createData(3, "officer33", "designation33"),
-  // createData(4, "officer34", "designation34"),
-  
-  createData(1, "officer36", "designation36"),
-    createData(2, "officer38", "designation38"),
-  createData(3, "officer37", "designation37"),
-  createData(4, "officer35", "designation35"),
+  createData(1, "officer22", "designation22"),
+  createData(2, "officer23", "designation23"),
+  createData(3, "officer24", "designation24"),
+  createData(4, "officer25", "designation25"),
+    createData(5, "officer26", "designation26"),
+  createData(6, "officer27", "designation27"),
+
+ 
+
 ];
 
-export default function NagpurDivision() {
-  const {t} =useTranslation();
-  return (
-    <Box sx={{ marginTop: 6, px: 2 }}>
+export default function MainDivision() {
+  const { t } = useTranslation();
 
-       {/* Header with Breadcrumb  */}
-       <Box
-              sx={{
-                backgroundColor: "#e3e4e6",
-                backgroundPosition: 'center',
-                color: 'blue',
-                py: 1,
-                px: 4,
-                textAlign: 'left',
-                position: 'relative',
-                mb:1
-      
-              }}
-            >
-              <Breadcrumbs aria-label="breadcrumb" sx={{ color: 'black' }}>
-                <Link underline="hover" color="inherit" href="/"
-                  sx={{
-                    backgroundColor: 'skyblue',
-                    py: 1,
-                    px: 4,
-                  }}>
-                  {t("home")}
-                </Link>
-                <Typography color="blue" sx={{
-      
-                }}>{t("department2")}</Typography>
-              </Breadcrumbs>
-      
-            </Box>
-      <Typography variant="h4" align="center" gutterBottom>
-       {t("department2")}
+  return (
+    <Box sx={{ marginTop: 6, px: { xs: 2, md: 4 }, fontFamily: 'Roboto, sans-serif' }}>
+
+      {/* Header with Breadcrumb */}
+      <Box
+        sx={{
+          background: 'linear-gradient(90deg, #2563eb, #60a5fa)',
+          color: 'white',
+          py: 2,
+          px: 4,
+          mb: 3,
+          borderRadius: 2,
+          boxShadow: 3,
+        }}
+      >
+        <Breadcrumbs aria-label="breadcrumb" sx={{ color: 'white' }}>
+          <Link
+            underline="hover"
+            color="inherit"
+            href="/"
+            sx={{ fontWeight: 500, fontSize: '1rem' }}
+          >
+            {t("home")}
+          </Link>
+          <Typography sx={{ fontWeight: 600, fontSize: '1rem' }}>
+            {t("department2")}
+          </Typography>
+        </Breadcrumbs>
+      </Box>
+
+      {/* Page Title */}
+      <Typography
+        variant="h4"
+        align="center"
+        gutterBottom
+        sx={{
+          fontWeight: 700,
+          fontSize: { xs: '1.8rem', md: '2.2rem' },
+          color: '#1e3a8a',
+          mb: 3,
+          textTransform: 'uppercase',
+          letterSpacing: 1,
+        }}
+      >
+        {t("department2")}
       </Typography>
 
-      <TableContainer component={Paper} sx={{p:6,boxShadow:3,borderRadius:2 }}>
+      {/* Table */}
+      <TableContainer component={Paper} sx={{ p: 2, boxShadow: 4, borderRadius: 3 }}>
         <Table sx={{ minWidth: 450 }} aria-label="division table">
           <TableHead>
-            <TableRow sx={{backgroundColor:'#76a6f5'}}>
-              <TableCell align="center"><strong>{t("srno")}</strong></TableCell>
-              <TableCell align="center"><strong>{t("name")}</strong></TableCell>
-              <TableCell align="center"><strong>{t("designation")}</strong></TableCell>
+            <TableRow sx={{ backgroundColor: '#1d4ed8' }}>
+              <TableCell align="center" sx={{ color: 'white', fontWeight: 700, fontSize: '1rem' }}>
+                {t("srno")}
+              </TableCell>
+              <TableCell align="center" sx={{ color: 'white', fontWeight: 700, fontSize: '1rem' }}>
+                {t("name")}
+              </TableCell>
+              <TableCell align="center" sx={{ color: 'white', fontWeight: 700, fontSize: '1rem' }}>
+                {t("designation")}
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
+            {rows.map((row, index) => (
               <TableRow
                 key={row.no}
-                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                sx={{
+                  backgroundColor: index % 2 === 0 ? '#f9fafb' : 'white',
+                  '&:hover': {
+                    backgroundColor: '#e0f2fe',
+                    transition: 'background-color 0.3s ease',
+                  },
+                }}
               >
-                <TableCell component="th" scope="row" align="center" >{row.no}</TableCell>
-                <TableCell align="center">{t(row.name)}</TableCell>
-                <TableCell align="center"  >{t(row.designation)}</TableCell>
+                <TableCell align="center" sx={{ fontWeight: 500 }}>{row.no}</TableCell>
+                <TableCell align="center" sx={{ fontWeight: 500 }}>{t(row.name)}</TableCell>
+                <TableCell align="center" sx={{ fontWeight: 500 }}>{t(row.designation)}</TableCell>
               </TableRow>
             ))}
           </TableBody>
         </Table>
       </TableContainer>
 
-      {/* Contact Information Section */}
+      {/* Contact Info */}
       <Box
-      sx={{
-        marginTop: 6,
-        p: 6,
-        backgroundColor: '#f1f5f9',
-        borderRadius: 2,
-        alignItems: 'center',
-        textAlign: 'center',
-        
-      }}
-    >
-      <Typography variant="h5" gutterBottom>
-        {t("contactinfo")}
-      </Typography>
-      <Typography variant="body2">
-        <strong>{t("corpName2")}</strong>
-      </Typography>
-      <Typography variant="body2">
-        {t("address2")}
-      </Typography>
-      <Typography variant="body2">
-        <strong>{t("email2")}</strong>
-      </Typography>
-      <Typography variant="body2">
-        <strong>{t("phone2")}</strong>
-      </Typography>
-    </Box>
+        sx={{
+          marginTop: 6,
+          marginBottom: 2,
+          p: 4,
+          backgroundColor: '#f1f5f9',
+          borderRadius: 3,
+          textAlign: 'center',
+          boxShadow: 2,
+          maxWidth: 700,
+          mx: 'auto',
+        }}
+      >
+        <Typography
+          variant="h5"
+          gutterBottom
+          sx={{ fontWeight: 700, color: '#1e40af', mb: 2 }}
+        >
+          {t("contactinfo")}
+        </Typography>
+        <Typography variant="body1" sx={{ fontWeight: 600 }}>
+          {t("corpName2")}
+        </Typography>
+        <Typography variant="body2" sx={{ color: '#475569', mt: 1 }}>
+          {t("address2")}
+        </Typography>
+        <Typography variant="body2" sx={{ mt: 2 }}>
+          <MailOutlineIcon/> <strong>{t("email2")}</strong>
+        </Typography>
+        <Typography variant="body2" sx={{ mt: 1 }}>
+          <PhoneInTalkIcon/> <strong>{t("phone2")}</strong>
+        </Typography>
+      </Box>
     </Box>
   );
 }
+

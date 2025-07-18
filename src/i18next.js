@@ -39,7 +39,7 @@ i18next.use(initReactI18next).init({
         person1Name1: "Hon. Shri Niteshji Rane",
         person1Designation1: "Minister   <br/>Fisheries and Ports, Government of Maharashtra ",
 
-        person2Name1: "Shri Ramaswamy N. (I.A.S.)",
+        person2Name1: "Dr. Ramaswamy N. (I.A.S.)",
         person2Designation1: " Secretary (Fisheries)<br/> Ministry, Government of Maharashtra, Mumbai",
 
         person3Name1: "Shri Avinash Pathak (I.A.S.)",
@@ -161,53 +161,94 @@ i18next.use(initReactI18next).init({
         srno: "SR.NO.",
         name: "Officers name ",
         designation: "Designation",
-        officer1: "Mr. Rohan Raut",
-        designation1: "Junior Clerk / Personal Assistant to the Managing Director",
 
-        officer2: "Mr. Kishor V. Salgaonkar",
-        designation2: "Senior Accountant",
+        //  main division
+
+        officer1: "Mr. Kishor V. Salgaonkar",
+        designation1: "Administrative Officer",
+
+        officer2: "Mr. Ravasahib Bobade",
+        designation2: "Executive Engineer",
 
         officer3: "Mrs. Shweta More",
-        designation3: "Assistant Accountant",
+        designation3: "Senior Accounts Assistant",
 
         officer4: "Mr. Shivam Sonawane",
-        designation4: "Assistant Fisheries Development Officer and Public Information Officer",
+        designation4: "Assistant Fisheries Development Officer",
 
-        officer5: "Mr. Prakash S. Katkade",
-        designation5: "Driver",
+        officer5: "Mr. Pranav Bandkar",
+        designation5: "Assistant Fisheries Development Officer",
 
-        officer6: "Rushikesh Dilip Palve",
-        designation6: "Assistant Fisheries Development Officer – Dimbe Dam, Pune",
+        officer6: "Mr. Rushikesh Palve",
+        designation6: "Assistant Fisheries Development Officer",
 
-        officer11: "Mr. Mohammad A. Jabbar",
-        designation11: "Driver",
+        officer7: "Mr. Vinay Gundaye",
+        designation7: "Junior Engineer",
 
-        officer21: "Mr. Ashok Na. Wahul",
-        designation21: "Peon",
+        officer8: "Mr. Neeraj Shinde",
+        designation8: "Junior Engineer",
 
-        officer31: "Mr. B. D. Garad",
-        designation31: "Divisional Manager",
+        officer9: "Mr. Rohan Raut",
+        designation9: "Junior Accounts Assistant",
 
-        officer32: "Mr. Rajesh T. Chandanbatwe",
-        designation32: "Senior Assistant",
+        officer10: "Mr. Omkar Bhuravane",
+        designation10: "Junior Clerk",
 
-        officer33: "Mr. Sunil B. Thakre",
-        designation33: "Fisheries Inspector",
+        officer11: "Mr. Sachin Katkade",
+        designation11: "Junior Clerk",
 
-        officer34: "Mr. Lala R. Meshram",
-        designation34: "Fisheries Inspector",
+        officer12: "Ms. Tanvi Sawant",
+        designation12: "Junior Clerk",
 
-        officer35: "Mr. Irfan Shaikh",
-        designation35: "Peon",
+        officer13: "Mrs. Rohini Gadhari",
+        designation13: "Junior Clerk",
 
-        officer36: "Mr. Yogesh Kataane",
-        designation36: "Sahayak Matsya Vikas Adhikari",
+        officer14: "Mr. Prakash S. Katkade",
+        designation14: "Driver",
 
-        officer37: "Mr. Vasant B. Parshive",
-        designation37: "Watchman",
+        officer15: "Mr. Sameer Surve",
+        designation15: "Peon",
 
-        officer38: "Mr. Dinesh Dhoke",
-        designation38: "Junior Clerk",
+        officer16: "Mr. Aniket Tamboli",
+        designation16: "Peon",
+
+        officer17: "Mrs. Sarita Kumbhar",
+        designation17: "Peon",
+
+        // aurangabad division
+
+        officer18: "Mr. Mohan Dattaram Gaikwad",
+        designation18: "Training Mechanic",
+
+        officer19: "Mr. Shivgovind R. Pande",
+        designation19: "Training Mechanic",
+
+        officer20: "Mr. Shyamsundar Damodar Pawar",
+        designation20: "Machinery Operator",
+
+        officer21: "Mr. Kondiba Yashwant Chattar",
+        designation21: "Machinery Operator",
+
+
+        // nagpur division
+
+        officer22: "Mr. Yogesh Kathane",
+        designation22: "Assistant Fisheries Development Officer",
+
+        officer23: "Mr. Dinesh Shamrao Dhoke",
+        designation23: "Junior Clerk-Typist",
+
+        officer24: "Mrs. Jayashri Kevate",
+        designation24: "Junior Accounts Assistant",
+
+        officer25: "Mr. Mohd. Abdul Jabbar Mohd. Sardar",
+        designation25: "Driver",
+
+        officer26: "Mr. Shaikh Irfan",
+        designation26: "Peon",
+
+        officer27: "Mr. Ashok Narayan Wahul",
+        designation27: "Peon",
 
 
 
@@ -331,7 +372,7 @@ i18next.use(initReactI18next).init({
         // directors name
         person1Name1: "मा.ना.श्री. नितेशजी राणे  ",
         person1Designation1: " मंत्री   <br/>मत्स्यव्यवसाय व बंदरे महाराष्ट्र राज्य, मुंबई",
-        person2Name1: "श्री. रामास्वामी एन. (भा. प्र. से.)",
+        person2Name1: "डॉ. रामास्वामी एन. (भा. प्र. से.)",
         person2Designation1: " सचिव (पदुम) <br/>मंत्रालय,महाराष्ट्र राज्य, मुंबई",
         person3Name1: "श्री. अविनाश पाठक (भा. प्र. से.)",
         person3Designation1: "व्यवस्थापकीय संचालक <br/>महाराष्ट्र मत्स्योद्योग विकास महामंडळ",
@@ -430,55 +471,93 @@ i18next.use(initReactI18next).init({
         srno: "अनुक्रमांक",
         name: "अधिकाऱ्यांचे नाव",
         designation: "पद",
-        officer1: "श्री. रोहन राऊत",
-        designation1: "कनिष्ठ लिपीक /व्यवस्थापकीय संचालक यांचे स्वीय सहाय्यक",
 
+        // main division
 
-        officer2: "श्री. किशोर वि. साळगांवकर",
-        designation2: "वरिष्ठ लेखापाल",
+        officer1: "श्री. किशोर साळगांवकर",
+        designation1: "प्रशासकीय अधिकारी",
+
+        officer2: "श्री. रावसाहेब बोबडे",
+        designation2: "कार्यकारी अभियंता",
 
         officer3: "सौ. श्वेता मोरे",
-        designation3: "सहायक लेखापाल",
+        designation3: "वरिष्ठ लेखा सहाय्यक",
 
         officer4: "श्री. शिवम सोनवणे",
-        designation4: "सहाय्यक मत्स्यव्यवसाय विकास अधिकारी तथा जन महिती अधिकारी",
+        designation4: "सहाय्यक मत्स्यव्यवसाय विकास अधिकारी",
 
-        officer5: "श्री. प्रकाश सं. कातकडे",
-        designation5: "वाहनचालक",
+        officer5: "श्री. प्रणव बांदकर",
+        designation5: "सहाय्यक मत्स्यव्यवसाय विकास अधिकारी",
 
-        officer6: "श्री. ऋषिकेश दिलीप पालवे",
-        designation6: "सहाय्यक मत्स्यव्यवसाय विकास अधिकारी डिंभे डॅम पुणे  ",
+        officer6: "श्री. ऋषिकेश पाळवे",
+        designation6: "सहाय्यक मत्स्यव्यवसाय विकास अधिकारी",
 
+        officer7: "श्री. विनय गुंडये",
+        designation7: "कनिष्ठ अभियंता",
 
-        officer11: "श्री. मोहम्मद अ. जब्बार",
-        designation11: "वाहनचालक",
+        officer8: "श्री. नीरज शिंदे",
+        designation8: "कनिष्ठ अभियंता",
 
-        officer21: "श्री.अशोक ना. वाहूळ",
-        designation21: "शिपाई",
+        officer9: "श्री. रोहन राऊत",
+        designation9: "कनिष्ठ लेखा सहाय्यक",
 
-        officer31: "श्री. बी. डी. गरड",
-        designation31: "विभागीय व्यवस्थापक",
+        officer10: "श्री. ओंकार भुरवणे",
+        designation10: "कनिष्ठ लिपिक",
 
-        officer32: "श्री. राजेश तू. चंदनबटवे",
-        designation32: "वरिष्ठ सहायक",
+        officer11: "श्री. सचिन कातकडे",
+        designation11: "कनिष्ठ लिपिक",
 
-        officer33: "श्री. सुनिल भि. ठाकरे",
-        designation33: "मत्स्यनिरीक्षक",
+        officer12: "सौ. तन्वी सावंत",
+        designation12: "कनिष्ठ लिपिक",
 
-        officer34: "श्री. लाला रा. मेश्राम",
-        designation34: "मत्स्यनिरीक्षक",
+        officer13: "सौ. रोहिणी गढरी",
+        designation13: "कनिष्ठ लिपिक",
 
-        officer35: "श्री. इरफान शेख",
-        designation35: "शिपाई",
+        officer14: "श्री. प्रकाश एस. कातकडे",
+        designation14: "वाहनचालक",
 
-        officer36: "श्री. योगेश कटाणे",
-        designation36: "सहाय्यक मत्स्य विकास अधिकारी",
+        officer15: "श्री. समीर सुर्वे",
+        designation15: "शिपाई",
 
-        officer37: "श्री. वंसत भु. पारशिवे",
-        designation37: "पहारेकरी",
+        officer16: "श्री. अनिकेत तांबोळी",
+        designation16: "शिपाई",
 
-        officer38: "श्री. दिनेश ढोके",
-        designation38: "कनिष्ठ लिपिक",
+        officer17: "श्रीमती. सरिता कुंभार",
+        designation17: "शिपाई",
+
+        // aurangabad division
+
+        officer18: "श्री. मोहन दत्ताराम गायकवाड",
+        designation18: "प्रशितन यांत्रिक",
+
+        officer19: "श्री. शिवगोविंद रा. पांडे",
+        designation19: "प्रशितन यांत्रिक",
+
+        officer20: "श्री. श्यामसुंदर दामोदर पवार",
+        designation20: "यंत्र सामग्री चालक",
+
+        officer21: "श्री. कोंडीबा यशवंत चत्तर",
+        designation21: "यंत्र सामग्री चालक",
+
+        //   nagpur divison
+
+        officer22: "श्री. योगेश कठाणे",
+        designation22: "सहाय्यक मत्स्यव्यवसाय विकास अधिकारी",
+
+        officer23: "श्री. दिनेश शामराव ढोके",
+        designation23: "कनिष्ठ लिपिक-टंकलेखक",
+
+        officer24: "सौ. जयश्री केवटे",
+        designation24: "कनिष्ठ लेखा सहाय्यक",
+
+        officer25: "श्री. मो. अब्दुल जब्बार मो. सरदार",
+        designation25: "वाहनचालक",
+
+        officer26: "श्री. शेख इरफान",
+        designation26: "शिपाई",
+
+        officer27: "श्री. अशोक नारायण वाहूळ",
+        designation27: "शिपाई",
 
 
 
