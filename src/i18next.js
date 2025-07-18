@@ -36,14 +36,14 @@ i18next.use(initReactI18next).init({
         connectWithUs: "Connect With Us",
 
         // directors name
-        person1Name1: "Hon. Shri Nitesh Rane",
-        person1Designation1: "Minister,  Fisheries and Ports <br/>Government of Maharashtra ",
+        person1Name1: "Hon. Shri Niteshji Rane",
+        person1Designation1: "Minister   <br/>Fisheries and Ports, Government of Maharashtra ",
 
         person2Name1: "Shri Ramaswamy N. (I.A.S.)",
-        person2Designation1: " Secretary, Fisheries,<br/> Government of Maharashtra",
+        person2Designation1: " Secretary (Fisheries)<br/> Ministry, Government of Maharashtra, Mumbai",
 
         person3Name1: "Shri Avinash Pathak (I.A.S.)",
-        person3Designation1: "Managing Director, Maharashtra<br/>  Fisheries Development Corporation",
+        person3Designation1: "Managing Director <br/>Maharashtra  Fisheries Development Corporation",
 
 
 
@@ -329,12 +329,12 @@ i18next.use(initReactI18next).init({
 
 
         // directors name
-        person1Name1: "मा. ना. श्री. नितेश राणे  ",
-        person1Designation1: " मंत्री , मत्स्यव्यवसाय व बंदरे <br/>महाराष्ट्र शासन",
+        person1Name1: "मा.ना.श्री. नितेशजी राणे  ",
+        person1Designation1: " मंत्री   <br/>मत्स्यव्यवसाय व बंदरे महाराष्ट्र राज्य, मुंबई",
         person2Name1: "श्री. रामास्वामी एन. (भा. प्र. से.)",
-        person2Designation1: " सचिव, मत्स्यव्यवसाय, <br/>महाराष्ट्र शासन ",
+        person2Designation1: " सचिव (पदुम) <br/>मंत्रालय,महाराष्ट्र राज्य, मुंबई",
         person3Name1: "श्री. अविनाश पाठक (भा. प्र. से.)",
-        person3Designation1: "व्यवस्थापकीय संचालक ,<br/>महाराष्ट्र मत्स्योद्योग विकास महामंडळ",
+        person3Designation1: "व्यवस्थापकीय संचालक <br/>महाराष्ट्र मत्स्योद्योग विकास महामंडळ",
 
 
 

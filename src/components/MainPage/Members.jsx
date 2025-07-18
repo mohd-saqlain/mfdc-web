@@ -98,8 +98,8 @@ const DirectorsPage = () => {
                 <Typography
                   variant="subtitle2"
                   sx={{
-                    color: '#666',
-                    fontStyle: 'italic',
+                    color: '#333',
+                  
                   }}
                 
                  dangerouslySetInnerHTML={{ __html: t(director.designation) }} />
