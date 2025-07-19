@@ -19,6 +19,7 @@ import Pmmsy_scheme from './pages/Schemes/Pmmsy_scheme';
 import Gais_Scheme from './pages/Schemes/Gais_Scheme';
 import Fidf_Scheme from './pages/Schemes/Fidf_Scheme';
 import BlueR_Scheme from './pages/Schemes/BlueR_Scheme';
+import Activities from './pages/activities';
 
 
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/fidfguidlines" element={<Fidf />} />
         <Route path="/generalguidlines" element={<GeneralGuid />} />
         <Route path="/csr" element={<Csrproject/>} />
+        <Route path="/activities" element={<Activities/>} />
        
 
         {/* schemes */}

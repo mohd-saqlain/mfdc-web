@@ -313,6 +313,7 @@ i18next.use(initReactI18next).init({
         about_description: "Maharashtra Fisheries Development Corporation was established in 1973 and has been actively working towards the development of deep-sea fishing and the welfare of fishermen. Due to the increasing use of mechanized fishing, the corporation was established by the government to utilize deep-sea fishing opportunities and to protect traditional fishermen. The corporation is actively involved in developing infrastructure for fisheries, managing large water reservoirs, and implementing fishery conservation projects.",
           instructions_title:"	Important Notice",
           instructions1:"Note for Photographers:Under the Maharashtra Fisheries Development Corporation Ltd., a camp was organized for 189 fisherfolk in Yavatmal district to assist them in obtaining GIAS, e-Shram, and Kisan Credit Cards. Additionally, awareness programs related to fisheries were conducted through camps in the villages of Jankar Kopra (Tal. Babhulgaon), Kolhi-2 rehabilitation village (Tal. Babhulgaon), and Sawanga (Tal. Digras), Yavatmal district.",
+           activities_heading:"Activities for Welfare and Support: GIAS, E-Shram, and KCC Camps",
 
 
 
@@ -634,7 +635,7 @@ i18next.use(initReactI18next).init({
        instructions_title:"	महत्वाची सूचना",
        instructions1:"Note For photographers: महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्या. अंतर्गत यवतमाळ जिल्ह्यातील १८९ मच्छिमार बांधवांन चे शिबिर घेऊन GIAS , इ-श्रम व किसान क्रेडिट कार्ड काढून देण्यास सहाय्य करण्यात आले. तसेच जानकर कोपरा ता.बाभुळगाव, कोल्ही -२ पुनर्वसन गाव ता. बाभुळगाव, सावंगा ता. डिग्रस जिल्हा यवतमाळ येथील मच्छिमार बांधवांनमध्ये शिबिर घेऊन मत्स्य व्यवसाय विषयक जागरूकता करण्यात आली",
 
-
+         activities_heading:"कल्याण व सहाय्य उपक्रम: GIAS, ई-श्रम, व KCC शिबिरे",
 
 
 

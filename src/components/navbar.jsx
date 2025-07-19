@@ -46,7 +46,7 @@ function Navbar(props) {
         // { page: 'schemes1', route: '/schemes' },
         { page: 'rti', route: '/rti' },
         // { page: 'guidlines', route: '/' },
-        { page: 'activities', route: '/' },
+        { page: 'activities', route: '/activities' },
         { page: 'keyprojects', route: '/' },
         { page: 'gallery', route: '/' },
         { page: 'reports', route: '/' },

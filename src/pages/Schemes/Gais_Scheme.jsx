@@ -1,10 +1,14 @@
+import { Box, Typography } from '@mui/material'
 import React from 'react'
 
 const Gais_Scheme = () => {
   return (
-    <div>
-      <h3>gais scheme</h3>
-    </div>
+   <Box sx={{marginTop:'40px'}}>
+    <Typography>
+      GAIS SCHEMES
+    </Typography>
+
+   </Box>
   )
 }
 

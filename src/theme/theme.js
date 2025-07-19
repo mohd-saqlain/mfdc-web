@@ -20,11 +20,11 @@ export const theme = createTheme({
     },
   },
   typography:{
-    fontFamily:'math',
+    fontFamily:'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;',
     body2:{
       fontSize:pxToRem(18),
       fontWeight:600,
-      fontFamily:'math'
+      fontFamily:'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;'
     },
  
     
