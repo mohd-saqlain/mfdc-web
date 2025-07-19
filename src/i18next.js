@@ -92,8 +92,8 @@ i18next.use(initReactI18next).init({
 
 
         missionheading: "Our mission is to empower the fisheries sector through strategic planning, innovation, and inclusive growth.",
-        missionpara1: "We strive to create sustainable livelihood opportunities...",
-        missionpara2: "By facilitating partnerships with research institutions...",
+        missionpara1: "The Maharashtra Fisheries Development Corporation is dedicated to the development of deep-sea fishing and the socio-economic empowerment of fishermen. To support this, infrastructure such as ice plants, cold storage facilities, and processing centers are established.",
+        missionpara2: "The Corporation provides fishermen with nets, boats, marine engines, vehicles, and other necessary equipment. The primary objective is to increase the production of traditional fishermen and safeguard their interests.",
 
 
         goalheading: "Our goals are strategically aligned to transform the fisheries ecosystem in Maharashtra.",
@@ -407,8 +407,8 @@ i18next.use(initReactI18next).init({
         visionpara2: "सशक्त परिसंस्था उभारणे, मासेमारी पायाभूत सुविधा आधुनिक करणे. मत्स्यव्यवसाय क्षेत्रामुंळे आर्थिक मागासवर्गीयांस रोजगार, स्वस्त व पोषक अन्न, उपलब्ध होते तसेच देशाला परकीय चलन प्राप्त होते. विभागाने विविध साधनसंपत्ती पध्दती, संधी, संभाव्य धोके इत्यादी बाबीं लक्षात घेऊन भविष्यासाठी धोरण निश्चित केले आहे. विभागाचे धोरण पुढील प्रमाणे आहे.",
 
         missionheading: "रणनीती, नावीन्यपूर्णता आणि समावेशी विकासाद्वारे मत्स्यव्यवसाय क्षेत्र सक्षम बनवणे हे आमचे ध्येय आहे.",
-        missionpara1: "शाश्वत उपजीविका संधी निर्माण करणे, न्याय्य बाजारपेठ मिळवून देणे...",
-        missionpara2: "संशोधन संस्थांबरोबर भागीदारी, तंत्रज्ञानाचा अवलंब...",
+        missionpara1: "महाराष्ट्र मत्स्योद्योग विकास महामंडळ खोल समुद्रातील मत्स्य व्यवसायाचा विकास आणि मच्छीमारांचे आर्थिक-सामाजिक सशक्तीकरण यासाठी कार्यरत आहे. यासाठी बर्फ कारखाने, कोल्ड स्टोरेज व प्रक्रिया केंद्र यांसारख्या पायाभूत सुविधा उभारल्या जातात.",
+        missionpara2: "महामंडळाकडून मच्छीमारांना जाळी, बोटी, सागरी इंजिन्स, वाहने व इतर साधनसामग्री पुरवली जाते. पारंपरिक मच्छीमार बांधवांचे उत्पादन वाढवणे आणि त्यांचे हित जपणे हे यामागचे प्रमुख उद्दिष्ट आहे.",
 
 
         goalheading: "Our goals are strategically aligned to transform the fisheries ecosystem in Maharashtra.",

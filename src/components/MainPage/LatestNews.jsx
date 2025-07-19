@@ -19,7 +19,7 @@ const ScrollingBox = styled(Box)(({ theme }) => ({
 const ScrollingContent = styled(Box)(({ theme }) => ({
   position: 'absolute',
   width: '100%',
-  animation: `${scrollUp} 15s linear infinite`,
+  animation: `${scrollUp} 25s linear infinite`,
 }));
 
 const LatestNews = () => {

@@ -89,7 +89,7 @@ export default function MainDivision() {
       <TableContainer component={Paper} sx={{ p: 2, boxShadow: 4, borderRadius: 3 }}>
         <Table sx={{ minWidth: 450 }} aria-label="division table">
           <TableHead>
-            <TableRow sx={{ backgroundColor: '#1d4ed8' }}>
+            <TableRow sx={{  backgroundImage: 'linear-gradient(61deg, #00bcf2, #3c3e96)',}}>
               <TableCell align="center" sx={{ color: 'white', fontWeight: 700, fontSize: '1rem' }}>
                 {t("srno")}
               </TableCell>
