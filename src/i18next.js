@@ -21,7 +21,7 @@ i18next.use(initReactI18next).init({
         schemes1: "Schemes",
         gallery: "Gallery",
         reports: "Reports",
-        recuitment: "Recuitment",
+        recuitment: "Recruitment",
 
 
         fisheriesFoundation: "Maharashtra Fisheries Development Corporation Limited, Mumbai",
