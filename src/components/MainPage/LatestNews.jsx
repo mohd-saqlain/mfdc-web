@@ -1,74 +1,88 @@
 import React from 'react';
+import { Typography, Box, useMediaQuery, useTheme } from '@mui/material';
+import { styled, keyframes } from '@mui/system';
 import { useTranslation } from 'react-i18next';
-import {
-  Box,
-  Typography,
-  Grid,
-  Card,
-  CardContent,
-  Button,
-  CardActionArea,
-} from '@mui/material';
 
-const  Latestnews = () => {
+const scrollUp = keyframes`
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
+`;
+
+const ScrollingBox = styled(Box)(({ theme }) => ({
+  height: '200px',
+  overflow: 'hidden',
+  position: 'relative',
+  background: '#f5f5f5',
+  borderRadius: '8px',
+}));
+
+const ScrollingContent = styled(Box)(({ theme }) => ({
+  position: 'absolute',
+  width: '100%',
+  animation: `${scrollUp} 15s linear infinite`,
+}));
+
+const LatestNews = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const { t } = useTranslation();
 
-  const latestNews = [
-    {
-      id: 1,
-      title: 'latestnews1',
-      date: 'April 10, 2025',
-      link: '#', // Replace with actual URL or route
-    },
-    {
-      id: 2,
-      title: 'latestnews2',
-      date: 'March 28, 2025',
-      link: '#',
-    },
-    {
-      id: 3,
-      title: 'latestnews3',
-      date: 'March 15, 2025',
-      link: '#',
-    },
+  const instructions = [
+    t('instructions1'),
+
   ];
 
   return (
-    <Box sx={{ p: 5 }}>
-      <Grid container justifyContent="space-between" alignItems="center" mb={2}>
-        <Grid item>
-          <Typography variant="h5" fontWeight="bold">
-            {t('latestnewst')}
-          </Typography>
-        </Grid>
-        <Grid item>
-          <Button variant="text" size="small" sx={{backgroundColor:"aliceblue"}}>
-            View All
-          </Button>
-        </Grid>
-      </Grid>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: isMobile ? 'column' : 'row',
+        flexWrap: 'nowrap',
+        width: '100%',
+        // maxWidth: '1200px',
+        mx: 'auto',
+        gap: 4,
+        p: 2,
+      }}
+    >
+      {/* Left Column */}
+      <Box sx={{ flex: 1, backgroundColor: 'aliceblue', p: 2 }} >
+        <Typography variant="h5" gutterBottom sx={{
+          backgroundImage: 'linear-gradient(61deg, #00bcf2, #3c3e96)',
+          color: 'white',
+          p: 1,
+          borderRadius: 1
+        }}>
 
-      <Grid container spacing={2}>
-        {latestNews.map((news) => (
-          <Grid item xs={12} md={4} key={news.id}>
-            <Card elevation={2}>
-              <CardActionArea href={news.link}>
-                <CardContent>
-                  <Typography variant="subtitle1" fontWeight="bold">
-                    {t(news.title)}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {news.date}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+          {t('about_title')}
+        </Typography>
+        <Typography variant="body1">
+          {t('about_description')}
+        </Typography>
+      </Box>
+
+      {/* Right Column */}
+      <Box sx={{ flex: 1, p: 2 }}>
+        <Typography variant="h5" gutterBottom sx={{
+          backgroundImage: 'linear-gradient(61deg, #00bcf2, #3c3e96)',
+          color: 'white',
+          p: 1,
+          borderRadius: 1
+        }}>
+          {t('instructions_title')}
+        </Typography>
+        <ScrollingBox>
+          <ScrollingContent>
+            {instructions.map((item, index) => (
+              <Typography key={index} variant="body1" sx={{ p: 1 }}>
+                {index + 1}. {item}
+              </Typography>
+            ))}
+          </ScrollingContent>
+        </ScrollingBox>
+      </Box>
     </Box>
   );
 };
 
-export default Latestnews;
+export default LatestNews;

@@ -307,8 +307,12 @@ i18next.use(initReactI18next).init({
         pmmsyschemes: "PMMSY Schemes",
         gaisschemes: "GAIS Schemes",
         fidfschemes: "FIDF Schemes",
-        bluerschemes: "Blue Revolution Schemes"
+        bluerschemes: "Blue Revolution Schemes",
 
+        about_title: "About MFDB",
+        about_description: "Maharashtra Fisheries Development Corporation was established in 1973 and has been actively working towards the development of deep-sea fishing and the welfare of fishermen. Due to the increasing use of mechanized fishing, the corporation was established by the government to utilize deep-sea fishing opportunities and to protect traditional fishermen. The corporation is actively involved in developing infrastructure for fisheries, managing large water reservoirs, and implementing fishery conservation projects.",
+          instructions_title:"	Important Notice",
+          instructions1:"Note for Photographers:Under the Maharashtra Fisheries Development Corporation Ltd., a camp was organized for 189 fisherfolk in Yavatmal district to assist them in obtaining GIAS, e-Shram, and Kisan Credit Cards. Additionally, awareness programs related to fisheries were conducted through camps in the villages of Jankar Kopra (Tal. Babhulgaon), Kolhi-2 rehabilitation village (Tal. Babhulgaon), and Sawanga (Tal. Digras), Yavatmal district.",
 
 
 
@@ -624,6 +628,11 @@ i18next.use(initReactI18next).init({
         gaisschemes: "जीएआयएस योजना",
         fidfschemes: "एफआयडीएफ योजना",
         bluerschemes: "ब्लू रिव्होल्यूशन योजना",
+
+        about_title: "महाराष्ट्र मत्स्यव्यवसाय विकास महामंडळाबद्दल",
+        about_description: "महाराष्ट्र मत्स्योद्योग विकास महामंडळ सन १९७३ मध्ये स्थापन करण्यात आले असून खोल समुद्रातील मत्स्यव्यवसायाचा विकास व मच्छीमारांचे हित साधण्यासाठी कार्यरत आहे. यांत्रिक मासेमारीच्या वाढत्या वापरामुळे खोल समुद्रातील मत्स्य संधींचा उपयोग होण्यासाठी आणि पारंपरिक मच्छीमारांचे संरक्षण करण्यासाठी हे महामंडळ शासनातर्फे स्थापन करण्यात आले. महामंडळ मासेमारीसाठी पायाभूत सुविधा उभारणे, मोठ्या जलाशयांचे व्यवस्थापन व मत्स्यसंवर्धन प्रकल्प राबविणे यामध्ये सक्रिय आहे.",
+       instructions_title:"	महत्वाची सूचना",
+       instructions1:"Note For photographers: महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्या. अंतर्गत यवतमाळ जिल्ह्यातील १८९ मच्छिमार बांधवांन चे शिबिर घेऊन GIAS , इ-श्रम व किसान क्रेडिट कार्ड काढून देण्यास सहाय्य करण्यात आले. तसेच जानकर कोपरा ता.बाभुळगाव, कोल्ही -२ पुनर्वसन गाव ता. बाभुळगाव, सावंगा ता. डिग्रस जिल्हा यवतमाळ येथील मच्छिमार बांधवांनमध्ये शिबिर घेऊन मत्स्य व्यवसाय विषयक जागरूकता करण्यात आली",
 
 
 
