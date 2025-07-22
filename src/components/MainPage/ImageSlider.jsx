@@ -47,7 +47,7 @@ const ImageSlider = () => {
                 height: "auto",
                 overflow: "hidden",
                 marginX: "auto",
-                // marginTop: "20px"
+                // marginTop: "auto",
             }}
         >
             <Swiper

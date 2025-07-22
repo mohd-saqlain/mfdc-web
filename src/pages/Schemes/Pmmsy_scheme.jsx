@@ -1,22 +1,25 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import { Breadcrumbs } from '@mui/material';
+import {
+  Tabs,
+  Tab,
+  Typography,
+  Box,
+  Breadcrumbs,
+  useMediaQuery,
+  useTheme
+} from '@mui/material';
 import { Link } from 'react-router-dom';
 import PdfViewer from '../../components/pdfviewer';
 import pdf1 from '../../assets/guidlines/general01.pdf';
 import pdf2 from '../../assets/guidlines/general02.pdf';
-
-
+import { useTranslation } from 'react-i18next';
 
 const pdfs = [pdf1, pdf2];
 
 const labels = [
-  "1. pmmsy scheme1",
-  "2. pmmsy scheme2"
+  'pmmsy_scheme1',
+  'pmmsy_scheme2'
 ];
 
 function TabPanel(props) {
@@ -32,7 +35,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          {children}
         </Box>
       )}
     </div>
@@ -53,98 +56,125 @@ function a11yProps(index) {
 }
 
 export default function Pmmsy_scheme() {
+  const { t } = useTranslation();
   const [value, setValue] = React.useState(0);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
   return (
-
-    <Box sx={{ marginTop: '40px', padding: '10px' }}>
-      <Box sx={{
-        backgroundColor: '#e3e4e6',
-        py: 1,
-        px: 4,
-        color: 'blue',
-        textAlign: 'left'
-      }}>
+    <Box sx={{ marginTop: '20px', padding: '10px' }}>
+      {/* Breadcrumbs */}
+      <Box
+        sx={{
+          backgroundColor: '#e3e4e6',
+          py: 1,
+          px: 4,
+          color: 'blue',
+          textAlign: 'left'
+        }}
+      >
         <Breadcrumbs aria-label='breadcrumb' sx={{ color: 'black' }}>
-
           <Link
             underline="hover"
             color='inherit'
             href="/"
-            sx={{
+            style={{
               backgroundColor: 'skyblue',
-              py: 1,
-              px: 4,
-              borderRadius: 1,
+              padding: '6px 16px',
+              borderRadius: 4,
+              textDecoration: 'none'
             }}
-
           >
             Home
           </Link>
-
-          <Typography color='blue' >pmmsy schemes</Typography>
+          <Typography color='blue'>PMMSY Schemes</Typography>
         </Breadcrumbs>
-
-
       </Box>
 
-      <Typography variant='h5' sx={{ textAlign:'center', py:5}}>
-        PMMSY SCHEMES
+      {/* Page Heading */}
+      <Typography variant='h5' sx={{ textAlign: 'center', py: 5 }}>
+        {t("pmmsy_heading")}
       </Typography>
 
+      {/* Main Layout */}
       <Box
         sx={{
-          bgcolor: 'background.paper',
           display: 'flex',
-          flexDirection: { xs: 'column', sm: 'row' },
+          flexDirection: isMobile ? 'column' : 'row',
+      
         }}
       >
-        {/* Left: Tabs */}
-        <Box sx={{ width: { xs: '100%', sm: '30%' }, borderRight: { sm: 1 }, borderColor: 'divider' }}>
+        {/* Left Tabs Panel */}
+        <Box
+          sx={{
+            minWidth: isMobile ? '100%' : 420,
+            p: 2,
+            // borderRadius: 2,
+            background: '#f9f9f9',
+          }}
+          elevation={3}
+        >
           <Tabs
             orientation="vertical"
             variant="scrollable"
             value={value}
             onChange={handleChange}
-            aria-label="Vertical tabs"
-            sx={{ width: '100%' }}
+            aria-label="PMMSY Tabs"
+            sx={{
+              '.MuiTab-root': {
+                alignItems: 'flex-start',
+                justifyContent: 'flex-start',
+                textAlign: 'left',
+                borderRadius: 1,
+                textTransform: 'none',
+                fontWeight: 500,
+                mb: 1,
+                px: 2,
+                py: 1,
+                transition: '0.3s ease',
+                color: '#fff',
+               backgroundImage: 'linear-gradient(61deg,rgb(32, 192, 237),rgba(36, 107, 222, 0.89))',
+              },
+              '.Mui-selected': {
+                backgroundImage: 'linear-gradient(61deg,rgb(58, 123, 214),rgb(57, 201, 241))',
+                fontWeight: 'bold',
+                boxShadow: 2,
+                color: '#fff',
+                borderLeft: isMobile ? 'none' : `4px solid #ffffff`,
+              },
+              '.MuiTabs-indicator': {
+                display: 'none',
+              },
+            }}
           >
             {labels.map((label, index) => (
-              <Tab
-                key={index}
-                label={label}
-                {...a11yProps(index)}
-                sx={{
-                  alignItems: 'flex-start',
-                  justifyContent: 'flex-start',
-                  backgroundColor: value === index ? 'skyblue' : 'transparent',
-                  color: value === index ? 'white' : 'black',
-                  fontWeight: value === index ? 'bold' : 'normal',
-                  borderRadius: '4px',
-                  textTransform: 'none',
-                  '&:hover': {
-                    backgroundColor: value === index ? 'skyblue' : '#f5f5f5',
-                  },
-                }}
-              />
+              <Tab key={index} label={t(label)} {...a11yProps(index)} />
             ))}
           </Tabs>
         </Box>
-        {/* Right: PDF Viewer */}
-        <Box sx={{ width: { xs: '100%', sm: '70%' }, overflow: 'hidden' }}>
+
+        {/* Right PDF Viewer Panel */}
+        <Box
+          sx={{
+            flexGrow: 1,
+            p: 3,
+            // borderRadius: 2,
+            minHeight: '400px',
+            backgroundColor: '#fff',
+          }}
+          elevation={3}
+        >
           {pdfs.map((pdf, index) => (
             <TabPanel key={index} value={value} index={index}>
               <PdfViewer file={pdf} />
             </TabPanel>
           ))}
         </Box>
-
       </Box>
-
     </Box>
   );
 }

@@ -39,7 +39,7 @@ export default function MainDivision() {
   const { t } = useTranslation();
 
   return (
-    <Box sx={{ marginTop: 6, px: { xs: 2, md: 4 }, fontFamily: 'Roboto, sans-serif' }}>
+    <Box sx={{ marginTop: 4, px: { xs: 2, md: 4 }, fontFamily: 'Roboto, sans-serif' }}>
 
       {/* Header with Breadcrumb */}
       <Box

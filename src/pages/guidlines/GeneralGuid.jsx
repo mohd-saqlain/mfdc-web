@@ -68,7 +68,7 @@ export default function GeneralGuid() {
   };
 
   return (
-    <Box sx={{ marginTop: '40px', padding:'10px' }}>
+    <Box sx={{ marginTop: '20px', padding:'10px' }}>
       {/* Header with Breadcrumb */}
       <Box sx={{
         backgroundColor: "#e3e4e6",

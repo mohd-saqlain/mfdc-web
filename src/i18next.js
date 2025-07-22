@@ -50,7 +50,7 @@ i18next.use(initReactI18next).init({
         // deparments
         department1: "Head Office",
         department2: "Nagpur Division",
-        department3: "Aurangabad Division",
+        department3: " sasson dock Division",
         department4: "Sassoon Dock",
 
         department5: "Parallel Pay Scale Employees",
@@ -67,7 +67,7 @@ i18next.use(initReactI18next).init({
         // deparments
         department1: "Head Office",
         department2: "Nagpur Division",
-        department3: "Aurangabad Division",
+        department3: " sasson dock Division",
         departments: "Department",
 
 
@@ -197,10 +197,10 @@ i18next.use(initReactI18next).init({
         officer11: "Mr. Sachin Katkade",
         designation11: "Junior Clerk",
 
-        officer12: "Ms. Tanvi Sawant",
+        officer12: "Mrs. Tanvi Sawant",
         designation12: "Junior Clerk",
 
-        officer13: "Mrs. Rohini Gadhari",
+        officer13: "Mrs. Rohini Harare",
         designation13: "Junior Clerk",
 
         officer14: "Mr. Prakash S. Katkade",
@@ -215,7 +215,7 @@ i18next.use(initReactI18next).init({
         officer17: "Mrs. Sarita Kumbhar",
         designation17: "Peon",
 
-        // aurangabad division
+        //  sasson dock division
 
         officer18: "Mr. Mohan Dattaram Gaikwad",
         designation18: "Training Mechanic",
@@ -261,7 +261,7 @@ i18next.use(initReactI18next).init({
 
         contactinfo1: "Contact Information",
         corpName1: "Maharashtra Fisheries Development Corporation Ltd.",
-        address1: "Ice Factory, Plot No. G-10, M.I.D.C. Chikalthana, Aurangabad 431 006.",
+        address1: "Sasson dock, colaba, Mumbai 400005",
 
         corpName2: "Maharashtra Fisheries Development Corporation Ltd.",
         address2: "Administrative Building No. 2, 5th Floor, A Wing, Civil Lines, Nagpur 440 001.",
@@ -311,10 +311,16 @@ i18next.use(initReactI18next).init({
 
         about_title: "About MFDB",
         about_description: "Maharashtra Fisheries Development Corporation was established in 1973 and has been actively working towards the development of deep-sea fishing and the welfare of fishermen. Due to the increasing use of mechanized fishing, the corporation was established by the government to utilize deep-sea fishing opportunities and to protect traditional fishermen. The corporation is actively involved in developing infrastructure for fisheries, managing large water reservoirs, and implementing fishery conservation projects.",
-          instructions_title:"	Important Notice",
-          instructions1:"Note for Photographers:Under the Maharashtra Fisheries Development Corporation Ltd., a camp was organized for 189 fisherfolk in Yavatmal district to assist them in obtaining GIAS, e-Shram, and Kisan Credit Cards. Additionally, awareness programs related to fisheries were conducted through camps in the villages of Jankar Kopra (Tal. Babhulgaon), Kolhi-2 rehabilitation village (Tal. Babhulgaon), and Sawanga (Tal. Digras), Yavatmal district.",
-           activities_heading:"Activities for Welfare and Support: GIAS, E-Shram, and KCC Camps",
+        instructions_title: "	Important Notice",
+        instructions1: "Note for Photographers:Under the Maharashtra Fisheries Development Corporation Ltd., a camp was organized for 189 fisherfolk in Yavatmal district to assist them in obtaining GIAS, e-Shram, and Kisan Credit Cards. Additionally, awareness programs related to fisheries were conducted through camps in the villages of Jankar Kopra (Tal. Babhulgaon), Kolhi-2 rehabilitation village (Tal. Babhulgaon), and Sawanga (Tal. Digras), Yavatmal district.",
+        activities_heading: "Activities for Welfare and Support: GIAS, E-Shram, and KCC Camps",
 
+
+        //schemes
+        gais_headline: "Group Accident Insurance scheme (GAIS)",
+        pmmsy_heading: "Pradhan Mantri Matsya Sampada Yojana (PMMSY)",
+        gais_pmmsy: "Group Accident Insurance Scheme (GAIS) - PMMSY(English)",
+        gais_pmmsy1:"Group Accident Insurance Scheme (GAIS) - PMMSY(Hindi)",
 
 
       }
@@ -351,7 +357,7 @@ i18next.use(initReactI18next).init({
         department1: "मुख्य कार्यालय ",
         department2: "नागपूर विभाग",
 
-        department3: "औरंगाबाद विभाग ",
+        department3: "ससून डॉक विभाग ",
 
         department4: "ससुन गोदी ",
 
@@ -369,7 +375,7 @@ i18next.use(initReactI18next).init({
         department1: "मुख्य कार्यालय ",
         department2: "नागपूर विभाग",
 
-        department3: "औरंगाबाद विभाग ",
+        department3: "ससून गोदी विभाग ",
         departments: "विभाग",
         registernow: " नोंदणी करा",
 
@@ -515,7 +521,7 @@ i18next.use(initReactI18next).init({
         officer12: "सौ. तन्वी सावंत",
         designation12: "कनिष्ठ लिपिक",
 
-        officer13: "सौ. रोहिणी गढरी",
+        officer13: "सौ. रोहिणी हरारे",
         designation13: "कनिष्ठ लिपिक",
 
         officer14: "श्री. प्रकाश एस. कातकडे",
@@ -530,7 +536,7 @@ i18next.use(initReactI18next).init({
         officer17: "श्रीमती. सरिता कुंभार",
         designation17: "शिपाई",
 
-        // aurangabad division
+        //  sasson dock division
 
         officer18: "श्री. मोहन दत्ताराम गायकवाड",
         designation18: "प्रशितन यांत्रिक",
@@ -577,7 +583,7 @@ i18next.use(initReactI18next).init({
 
         contactinfo1: "संपर्क माहिती",
         corpName1: "महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित,",
-        address1: "बर्फ कारखाना, प्लॉट नं. जी-10, एम.आय.डी.सी.  चिखलठाणा, औरंगाबाद 431 006.",
+        address1: "ससून डॉक, कुलाबा, मुंबई – ४००००५",
 
 
         corpName2: "महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित",
@@ -632,10 +638,16 @@ i18next.use(initReactI18next).init({
 
         about_title: "महाराष्ट्र मत्स्यव्यवसाय विकास महामंडळाबद्दल",
         about_description: "महाराष्ट्र मत्स्योद्योग विकास महामंडळ सन १९७३ मध्ये स्थापन करण्यात आले असून खोल समुद्रातील मत्स्यव्यवसायाचा विकास व मच्छीमारांचे हित साधण्यासाठी कार्यरत आहे. यांत्रिक मासेमारीच्या वाढत्या वापरामुळे खोल समुद्रातील मत्स्य संधींचा उपयोग होण्यासाठी आणि पारंपरिक मच्छीमारांचे संरक्षण करण्यासाठी हे महामंडळ शासनातर्फे स्थापन करण्यात आले. महामंडळ मासेमारीसाठी पायाभूत सुविधा उभारणे, मोठ्या जलाशयांचे व्यवस्थापन व मत्स्यसंवर्धन प्रकल्प राबविणे यामध्ये सक्रिय आहे.",
-       instructions_title:"	महत्वाची सूचना",
-       instructions1:"Note For photographers: महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्या. अंतर्गत यवतमाळ जिल्ह्यातील १८९ मच्छिमार बांधवांन चे शिबिर घेऊन GIAS , इ-श्रम व किसान क्रेडिट कार्ड काढून देण्यास सहाय्य करण्यात आले. तसेच जानकर कोपरा ता.बाभुळगाव, कोल्ही -२ पुनर्वसन गाव ता. बाभुळगाव, सावंगा ता. डिग्रस जिल्हा यवतमाळ येथील मच्छिमार बांधवांनमध्ये शिबिर घेऊन मत्स्य व्यवसाय विषयक जागरूकता करण्यात आली",
+        instructions_title: "	महत्वाची सूचना",
+        instructions1: "Note For photographers: महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्या. अंतर्गत यवतमाळ जिल्ह्यातील १८९ मच्छिमार बांधवांन चे शिबिर घेऊन GIAS , इ-श्रम व किसान क्रेडिट कार्ड काढून देण्यास सहाय्य करण्यात आले. तसेच जानकर कोपरा ता.बाभुळगाव, कोल्ही -२ पुनर्वसन गाव ता. बाभुळगाव, सावंगा ता. डिग्रस जिल्हा यवतमाळ येथील मच्छिमार बांधवांनमध्ये शिबिर घेऊन मत्स्य व्यवसाय विषयक जागरूकता करण्यात आली",
 
-         activities_heading:"कल्याण व सहाय्य उपक्रम: GIAS, ई-श्रम, व KCC शिबिरे",
+        activities_heading: "कल्याण व सहाय्य उपक्रम: GIAS, ई-श्रम, व KCC शिबिरे",
+
+        //schemes
+        gais_headline: "समूह अपघात विमा योजना (GAIS)",
+        pmmsy_heading: "प्रधानमंत्री मत्स्य संपदा योजना (PMMSY)",
+        gais_pmmsy: "समूह अपघात विमा योजना (GAIS) - प्रधानमंत्री मत्स्य संपदा योजना (PMMSY) (English)",
+         gais_pmmsy1:"समूह अपघात विमा योजना (GAIS) - प्रधानमंत्री मत्स्य संपदा योजना (PMMSY) (Hindi)",
 
 
 

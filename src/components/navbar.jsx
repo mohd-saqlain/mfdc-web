@@ -29,8 +29,11 @@ import { useTranslation } from 'react-i18next';
 import logo from "../assets/logo.png"
 import logo1 from "../assets/logo1.png"
 import logo2 from "../assets/Swach-Bharat.png"
-import logo3 from "../assets/logo5.png";
+// import logo3 from "../assets/logo5.png";
+import logoEN from "../assets/logo7.png";
+import logoMAR from "../assets/logo5.png";
 import { getFormatDate } from '../utility/dateformator';
+import logo4 from "../assets/quicklinks5.png";
 
 
 const drawerWidth = 240;
@@ -131,6 +134,8 @@ function Navbar(props) {
         const languageCode = i18n.language === "mr" ? "en" : "mr";
         i18n.changeLanguage(languageCode);
     };
+
+    const logo3 = i18n.language === "en" ? logoEN : logoMAR;
 
     const drawer = (
         <Box sx={{ textAlign: 'center' }}>
@@ -315,9 +320,10 @@ function Navbar(props) {
                             flexDirection: { xs: "row", sm: "row" }, // Stack vertically on xs
                             alignItems: "center",
                             justifyContent: { xs: 'flex-start', sm: 'space-evenly' },
-                            gap: { xs: 1, sm: 2 }, // Smaller gap on mobile
+                            gap: { xs: 1, sm: 8 }, // Smaller gap on mobile
                             py: 1,
-                            px:'10px',
+                            px: '10px',
+                            flexWrap: 'wrap',
                         }}
                     >
                         <Box
@@ -337,6 +343,12 @@ function Navbar(props) {
                             component="img"
                             src={logo2}
                             alt="Logo 3"
+                            sx={{ height: { xs: 50, sm: 80 }, maxWidth: "100%", objectFit: "contain" }}
+                        />
+                        <Box
+                            component="img"
+                            src={logo4}
+                            alt="Logo 2"
                             sx={{ height: { xs: 50, sm: 80 }, maxWidth: "100%", objectFit: "contain" }}
                         />
                         <Box
@@ -369,7 +381,14 @@ function Navbar(props) {
                     </IconButton>
 
                     {/* Desktop nav buttons */}
-                    <Box sx={{ display: { xs: 'none', sm: 'flex', flexWrap: "wrap", }, gap: 1, }}
+                    <Box sx={{
+                        display: { xs: 'none', sm: 'flex', flexWrap: "wrap", }, gap: 1,
+                        '& .MuiButton-root': {
+                            color: 'white',
+                            fontWeight: '600',
+                            textTransform: 'none', // apply to all buttons
+                        },
+                    }}
                     >
                         {navItems.map((item) => (
                             <React.Fragment key={item.page}>
@@ -388,7 +407,7 @@ function Navbar(props) {
                                         <Button
                                             sx={{ color: 'white', fontWeight: '600' }}
                                             onClick={handleDeptMenuClick}
-                                            endIcon={<ExpandMoreIcon/>}
+                                            endIcon={<ExpandMoreIcon />}
                                         >
                                             {t('departments')}
                                         </Button>
@@ -416,7 +435,7 @@ function Navbar(props) {
                                         <Button
                                             sx={{ color: 'white', fontWeight: '600' }}
                                             onClick={(e) => setNFDCMenuAnchorEl(e.currentTarget)}
-                                            endIcon={<ExpandMoreIcon/>}
+                                            endIcon={<ExpandMoreIcon />}
                                         >
                                             {t('nfdc_projects')}
                                         </Button>
@@ -444,7 +463,7 @@ function Navbar(props) {
                                         <Button
                                             sx={{ color: 'white', fontWeight: '600' }}
                                             onClick={(e) => setGuidlinesMenuAnchorEl(e.currentTarget)}
-                                            endIcon={<ExpandMoreIcon/>}
+                                            endIcon={<ExpandMoreIcon />}
                                         >
                                             {t('guidlines')}
                                         </Button>
@@ -471,7 +490,7 @@ function Navbar(props) {
                                         <Button
                                             sx={{ color: 'white', fontWeight: '600' }}
                                             onClick={(e) => setSchemesMenuAnchorEl(e.currentTarget)}
-                                            endIcon={<ExpandMoreIcon/>}
+                                            endIcon={<ExpandMoreIcon />}
                                         >
                                             {t('schemes1')}
                                         </Button>
@@ -506,7 +525,7 @@ function Navbar(props) {
                         disableGutters
                         sx={{
                             width: "auto",
-                             ml: "auto", 
+                            ml: "auto",
                             px: { xs: 1, sm: 2 },
                             py: { xs: "2px", sm: "2px" },
                         }}
@@ -523,10 +542,10 @@ function Navbar(props) {
                                 color: "white",
                                 backgroundColor: "rgba(11, 80, 133, 0.83)",
                                 borderRadius: "20px",
-                                fontWeight:'700',
+                                fontWeight: '700',
                                 boxShadow: "0px 4px 12px rgba(0,0,0,0.2)",
                                 textTransform: "none",
-                                gap:1,
+                                gap: 1,
                                 transition: "all 0.3s ease",
                                 "&:hover": {
                                     backgroundColor: "rgba(4, 53, 90, 0.83)",
@@ -536,8 +555,8 @@ function Navbar(props) {
                             }}
                         >
                             {t("registernow")}
-                            <ExitToAppIcon  sx={{ fontSize: 20 }}/>
-                            
+                            <ExitToAppIcon sx={{ fontSize: 20 }} />
+
                         </Button>
                     </ListItem>
 
@@ -559,7 +578,7 @@ function Navbar(props) {
                     {drawer}
                 </Drawer>
             </nav>
-            <Box component="main" sx={{ p: 3 }}>
+            <Box component="main" sx={{ p: 4 }}>
                 <Toolbar />
             </Box>
         </Box>

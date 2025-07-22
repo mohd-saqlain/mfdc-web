@@ -97,7 +97,7 @@ export default function Rti1() {
       }}>
       <Table sx={{ minWidth: 700 }} aria-label="RTI Documents Table">
         <TableBody>
-          <TableRow sx={{backgroundColor:'black'}}>
+          <TableRow sx={{ backgroundImage: 'linear-gradient(61deg,rgb(32, 192, 237),rgba(36, 107, 222, 0.89))',}}>
             <TableCell sx={{color:'white'}}><strong>Sr. No.</strong></TableCell>
             <TableCell sx={{color:'white'}}><strong>{t("titlerti")}</strong></TableCell>
             <TableCell align="center" sx={{color:'white'}}><strong>{t("filerti")}</strong></TableCell>
